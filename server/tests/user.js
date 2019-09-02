@@ -36,7 +36,19 @@ describe('user should sign in', () => {
   it('expect user to sign in', (done) => {
     chai.request(server)
       .post('/api/v1/auth/signin')
-      .send({email:'gdu@gmail.com', password:'success'})
+      .send({ email: 'gdu@gmail.com', password: 'success' })
+      .end((err, res) => {
+        console.log(res.body);
+        done();
+      });
+  });
+});
+
+describe('user should see all mentors', () => {
+  it('expect user to see all mentors', (done) => {
+    chai.request(server)
+      .post('/api/v1/mentors')
+      .send({ email: 'gdu@gmail.com', password: 'success' })
       .end((err, res) => {
         console.log(res.body);
         done();
