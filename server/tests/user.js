@@ -44,6 +44,7 @@ describe('user should sign in', () => {
   });
 });
 
+<<<<<<< HEAD
 describe('user should see mentors', () => {
   it('expect user to see  mentors', (done) => {
     chai.request(server)
@@ -86,6 +87,13 @@ describe('user should see all the sessions', () => {
     chai.request(server)
       .get('/api/v1/sessions')
       .send(newUser)
+=======
+describe('user should see all mentors', () => {
+  it('expect user to see all mentors', (done) => {
+    chai.request(server)
+      .post('/api/v1/mentors')
+      .send({ email: 'gdu@gmail.com', password: 'success' })
+>>>>>>> develop
       .end((err, res) => {
         console.log(res.body);
         done();
