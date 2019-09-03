@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 import Mentors from '../models/mentorsModel';
 
 
@@ -12,8 +13,17 @@ class mentorsControllers {
   static getSpecificMentor(req, res) {
     const mentorId = req.params.id;
     // eslint-disable-next-line no-shadow
+<<<<<<< HEAD
     
     // eslint-disable-next-line eqeqeq
+=======
+<<<<<<< HEAD
+
+=======
+    
+    // eslint-disable-next-line eqeqeq
+>>>>>>> develop
+>>>>>>> ft-fixminorbugs-168259880
     const mentor = Mentors.find((mentor) => mentor.id == mentorId);
     if (mentor) {
       return res.status(200).json({

@@ -1,6 +1,6 @@
 import Sessions from '../models/sessionModels';
 import Mentors from '../models/mentorsModel';
-
+ 
 class sessionsControllers {
   static getAllSessions(req, res) {
     return res.status(200).json({
@@ -40,8 +40,16 @@ class sessionsControllers {
 
   // Approve sessiom
   static ApproveSession(req, res) {
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> develop
+>>>>>>> ft-fixminorbugs-168259880
     const session = Sessions.find((session) => session.id === req.params.id);
     if (session) {
       session.status = true;
