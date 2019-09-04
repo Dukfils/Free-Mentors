@@ -13,7 +13,7 @@ class mentorsControllers {
   static getSpecificMentor(req, res) {
     const mentorId = req.params.id;
     // eslint-disable-next-line no-shadow
-     const mentor = Mentors.find((mentor) => mentor.id == mentorId);
+    const mentor = Mentors.find((mentor) => mentor.id == mentorId);
     if (mentor) {
       return res.status(200).json({
         status: res.statusCode,

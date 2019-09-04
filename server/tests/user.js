@@ -43,8 +43,6 @@ describe('user should sign in', () => {
       });
   });
 });
-
-
 describe('user should see mentors', () => {
   it('expect user to see  mentors', (done) => {
     chai.request(server)
