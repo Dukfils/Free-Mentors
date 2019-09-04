@@ -40,16 +40,9 @@ class sessionsControllers {
 
   // Approve sessiom
   static ApproveSession(req, res) {
-<<<<<<< HEAD
 
 
-=======
-<<<<<<< HEAD
-=======
 
-
->>>>>>> develop
->>>>>>> ft-fixminorbugs-168259880
     const session = Sessions.find((session) => session.id === req.params.id);
     if (session) {
       session.status = true;
