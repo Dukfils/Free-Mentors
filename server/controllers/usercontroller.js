@@ -2,6 +2,7 @@ import Joi from '@hapi/joi';
 import User from '../models/usermodel';
 import Mentors from '../models/mentorsModel';
 
+
 class UserController {
     signUpControll = (req, res) => {
       const model = {

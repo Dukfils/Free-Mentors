@@ -66,34 +66,3 @@ describe('user should see a specific mentor by id', () => {
       });
   });
 });
-
-describe('user should see a message', () => {
-  it('expect user to get a message', (done) => {
-    chai.request(server)
-      .get('/api/v1/mentors/80')
-      .send(newUser)
-      .end((err, res) => {
-        expect(res.body).to.have.status(404);
-        console.log(res.body);
-        done();
-      });
-  });
-});
-
-describe('user should see all the sessions', () => {
-  it('expect user to see all the sessions', (done) => {
-    chai.request(server)
-      .get('/api/v1/sessions')
-      .send(newUser)
-describe('user should see all mentors', () => {
-  it('expect user to see all mentors', (done) => {
-    chai.request(server)
-      .post('/api/v1/mentors')
-      .send({ email: 'gdu@gmail.com', password: 'success' })
-
-      .end((err, res) => {
-        console.log(res.body);
-        done();
-      });
-  });
-});
