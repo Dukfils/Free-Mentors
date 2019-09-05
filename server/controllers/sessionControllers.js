@@ -1,5 +1,4 @@
 import Sessions from '../models/sessionModels';
-import Mentors from '../models/mentorsModel';
 
 class sessionsControllers {
   static getAllSessions(req, res) {
@@ -18,7 +17,7 @@ class sessionsControllers {
 
   static createSession(req, res) {
     const {
-      mentorId, menteeId, questions, menteeEmail, status,
+      mentorId, menteeId, questions, menteeEmail,
     } = req.body;
     console.log(req.body);
 
@@ -28,32 +27,49 @@ class sessionsControllers {
       menteeId,
       questions,
       menteeEmail,
-      status,
+      status: 'pending',
     };
 
     Sessions.push(newSession);
     return res.status(201).json({
       status: res.statusCode,
-      data: newSession,
+      data: Sessions,
     });
   }
 
   // Approve sessiom
   static ApproveSession(req, res) {
-
-
+    // eslint-disable-next-line no-shadow
     const session = Sessions.find((session) => session.id === req.params.id);
+    console.log(session);
     if (session) {
-      session.status = true;
+      session.status = 'accepted';
 
       return res.status(200).json({
         status: res.statusCode,
-        data: session,
+        data: session.status,
       });
     }
-    return res.status(404).json({
+    return res.status(204).json({
       status: res.statusCode,
-      error: 'Session not Found',
+      error: 'Session not created',
+    });
+  }
+
+  // reject session
+  static rejectSession(req, res) {
+    // eslint-disable-next-line eqeqeq
+    const findSession = Sessions.find((session) => session.id == req.params.id);
+    if (findSession) {
+      findSession.session.status = 'rejected';
+      return res.status(200).json({
+        status: 200,
+        data: findSession,
+      });
+    }
+    return res.send(204).json({
+      status: 204,
+      error: 'not created',
     });
   }
 }

@@ -12,6 +12,8 @@ const sessionRoute = express.Router();
 
 sessionRoute.get('/', sessionsControllers.getAllSessions);
 sessionRoute.post('/', sessionsControllers.createSession);
-sessionRoute.patch('/:id', sessionsControllers.ApproveSession);
+sessionRoute.patch('/sessions/:id/accept', sessionsControllers.ApproveSession);
+sessionRoute.patch('/sessions/:id/reject', sessionsControllers.rejectSession);
+
 
 export default sessionRoute;

@@ -5,8 +5,8 @@ import Mentors from '../models/mentorsModel';
 class UserController {
     signUpControll = (req, res) => {
       const model = {
-        firstname: Joi.string().required(),
-        lastname: Joi.string().required(),
+        firstname: Joi.string().regex(/^[a-zA-Z]+$/).required(),
+        lastname: Joi.string().regex(/^[a-zA-Z]+$/).required(),
         email: Joi.string().email().required(),
         password: Joi.string().alphanum().min(6).required(),
         address: Joi.string().required(),
@@ -42,8 +42,8 @@ class UserController {
         return res.status(401).send(user);
       }
       return res.status(400).send({ status: 400, error: `${result.error.details[0].message}` });
-    }
+    };
 
-      
+
 }
 export default UserController;

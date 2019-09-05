@@ -17,7 +17,7 @@ app.use('/api/v1/sessions', sessionRoute);
 app.use('/', (req, res) => {
   res.status(200).send({
     status: 200,
-    error: 'Welcome to Our Mentors Portal',
+    message: 'Welcome to Our Mentors Portal',
   });
 });
 

@@ -20,24 +20,24 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">14.29% </span>
+        <span class="strong">7.69% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/21</span>
+        <span class='fraction'>2/26</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>0/4</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/5</span>
+        <span class='fraction'>0/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">18.75% </span>
+        <span class="strong">9.52% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/16</span>
+        <span class='fraction'>2/21</span>
       </div>
     </div>
     <p class="quiet">
@@ -106,8 +106,23 @@
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
 <a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<a name='L61'></a><a href='#L61'>61</a>
+<a name='L62'></a><a href='#L62'>62</a>
+<a name='L63'></a><a href='#L63'>63</a>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a>
+<a name='L77'></a><a href='#L77'>77</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,11 +164,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -167,7 +199,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Sessions from '../models/sessionModels';
-import Mentors from '../models/mentorsModel';
 &nbsp;
 class sessionsControllers {
   static getAllSessions(<span class="fstat-no" title="function not covered" >req, r</span>es) {
@@ -184,9 +215,9 @@ class sessionsControllers {
     });
   }
 &nbsp;
-  static createSession(<span class="fstat-no" title="function not covered" >req, r</span>es) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span></span>
+  static createSession(<span class="fstat-no" title="function not covered" >req, r</span>es) <span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" >{</span></span></span></span>
     const {
-      mentorId, menteeId, questions, menteeEmail, status,
+      mentorId, menteeId, questions, menteeEmail,
     } = <span class="cstat-no" title="statement not covered" >req.body;</span>
 <span class="cstat-no" title="statement not covered" >    console.</span>log(req.body);
 &nbsp;
@@ -196,32 +227,49 @@ class sessionsControllers {
       menteeId,
       questions,
       menteeEmail,
-      status,
+      status: 'pending',
     };
 &nbsp;
 <span class="cstat-no" title="statement not covered" >    Sessions.p</span>ush(newSession);
 <span class="cstat-no" title="statement not covered" >    return r</span>es.status(201).json({
       status: res.statusCode,
-      data: newSession,
+      data: Sessions,
     });
   }
 &nbsp;
   // Approve sessiom
   static ApproveSession(<span class="fstat-no" title="function not covered" >req, r</span>es) {
-&nbsp;
-&nbsp;
+    // eslint-disable-next-line no-shadow
     const session = <span class="cstat-no" title="statement not covered" >Sessions.f</span>ind(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span></span>ession) =&gt; session.id === req.params.id);
+<span class="cstat-no" title="statement not covered" >    console.</span>log(session);
 <span class="cstat-no" title="statement not covered" >    if (session) {</span>
-<span class="cstat-no" title="statement not covered" >      session.</span>status = true;
+<span class="cstat-no" title="statement not covered" >      session.</span>status = 'accepted';
 &nbsp;
 <span class="cstat-no" title="statement not covered" >      return r</span>es.status(200).json({
         status: res.statusCode,
-        data: session,
+        data: session.status,
       });
     }
-<span class="cstat-no" title="statement not covered" >    return r</span>es.status(404).json({
+<span class="cstat-no" title="statement not covered" >    return r</span>es.status(204).json({
       status: res.statusCode,
-      error: 'Session not Found',
+      error: 'Session not created',
+    });
+  }
+&nbsp;
+  // reject session
+  static rejectSession(<span class="fstat-no" title="function not covered" >req, r</span>es) {
+    // eslint-disable-next-line eqeqeq
+    const findSession = <span class="cstat-no" title="statement not covered" >Sessions.f</span>ind(<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span></span>ession) =&gt; session.id == req.params.id);
+<span class="cstat-no" title="statement not covered" >    if (findSession) {</span>
+<span class="cstat-no" title="statement not covered" >      findSession.</span>session.status = 'rejected';
+<span class="cstat-no" title="statement not covered" >      return r</span>es.status(200).json({
+        status: 200,
+        data: findSession,
+      });
+    }
+<span class="cstat-no" title="statement not covered" >    return r</span>es.send(204).json({
+      status: 204,
+      error: 'not created',
     });
   }
 }
@@ -232,7 +280,7 @@ export default sessionsControllers;
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Sep 02 2019 11:51:49 GMT+0200 (Eastern European Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Sep 05 2019 12:26:22 GMT+0200 (Eastern European Standard Time)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

@@ -6,7 +6,7 @@ const Sessions = [
     menteeId: 1,
     questions: 'stress',
     menteeEmail: 'gdukfils@gmail.com',
-    status: 'false',
+    status: 'pending',
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const Sessions = [
     menteeId: 2,
     questions: 'headache',
     menteeEmail: 'bahatiphill@gmail.com',
-    status: 'false',
+    status: 'pending',
   },
 ];
 
