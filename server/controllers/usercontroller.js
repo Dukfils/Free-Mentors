@@ -44,7 +44,5 @@ class UserController {
       }
       return res.status(400).send({ status: 400, error: `${result.error.details[0].message}` });
     }
-
-      
 }
 export default UserController;

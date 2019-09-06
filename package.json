@@ -46,6 +46,7 @@
     "mocha": "^6.2.0",
     "node-datetime": "^2.1.2",
     "nyc": "^14.1.1",
+    "password-hash": "^1.2.2",
     "path": "^0.12.7",
     "swagger": "^0.7.5"
   },
