@@ -41,7 +41,7 @@
     "esm": "^3.2.25",
     "express": "^4.17.1",
     "faker": "^4.1.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.15",
     "mocha": "^6.2.0",
     "node-datetime": "^2.1.2",
